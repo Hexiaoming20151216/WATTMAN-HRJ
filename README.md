@@ -1,1 +1,21 @@
-# WATTMAN-HRJ
+﻿代码题1：
+1.使用icp或ndt方法完成两帧点云配准；两帧点云匹配算法耗时控制在100ms以内；
+  输出：匹配后的点云pcd文件、转换坐标矩阵和耗时；
+  语言：C++  Cmake
+  创建工程，在README.md中附上问题描述、编译指令和配准结果的截图等
+
+代码题2：
+分别已知A B两点imu的四元数和坐标值，输出A到B点的坐标转换矩阵；
+1. 输入：A B 两点的imu四元数 Eigen::Quaterniond quat_imu， 坐标值：Eigen::Vector3d pos;
+   输出： A到B点的坐标转换矩阵： Eigen::Matrix3d transform_matrix;
+
+
+编译指令：
+mkdir build
+cd build
+cmake ..
+make
+./WATTMAN
+
+匹配结果：
+
